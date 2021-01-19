@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class Body extends StatelessWidget {
     return SafeArea(
       child: Column(
         children : [
-          Text('Home Page')
+          Text(AppLocalizations.of(context).helloWorld)
         ]
       ),
     );
