@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:operator_platorm/modules/home/Home.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'package:operator_platorm/modules/home/Home.dart';
+import 'package:operator_platorm/routes.dart';
 import 'package:operator_platorm/theme/AppStateNotifier.dart';
 import 'package:operator_platorm/theme/app-theme.dart';
-import 'package:provider/provider.dart';
 void main() {
   runApp(ChangeNotifierProvider<AppStateNotifier>(
       create: (_) => new AppStateNotifier(),
@@ -36,7 +38,8 @@ class OperatorPlatformApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: appState.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
-      home: Home(), 
+      home: Home(),
+      routes: routes, 
     );
     });
   

@@ -30,7 +30,8 @@ class AppTheme {
     ),
     textTheme: TextTheme(
       bodyText1: TextStyle(color: Colors.white),
-      bodyText2: TextStyle(color: Colors.white)
+      bodyText2: TextStyle(color: Colors.white),
+      headline1: TextStyle(color: Colors.white),
     ),
     cardTheme: CardTheme(
       color: Colors.black,
